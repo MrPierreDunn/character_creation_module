@@ -26,7 +26,7 @@ def remove_rep(current_rep: float, rep_points:
 
 
 def main(duel_res: list[tuple[int, str, bool]]) -> str:
-    current_rep = 0.0
+    current_rep: float = 0.0
     for rep, result, effect in duel_res:
         if result == 'success':
             current_rep = add_rep(current_rep, rep, effect)
